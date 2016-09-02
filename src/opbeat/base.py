@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Hive PayPal API
+# Hive Opbeat API
 # Copyright (c) 2008-2016 Hive Solutions Lda.
 #
-# This file is part of Hive PayPal API.
+# This file is part of Hive Opbeat API.
 #
 # Hive Opbeat API is free software: you can redistribute it and/or modify
 # it under the terms of the Apache License as published by the Apache
