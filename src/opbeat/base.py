@@ -73,9 +73,14 @@ class Api(appier.Api):
         headers["Authorization"] = "Bearer %s" % self.token
 
     def release(self, payload = {}):
-        url = self.base_url + "releases/"
+        url = self.app_url + "releases/"
+        contents = self.post(url, data_j = payload)
+        return contents
+
+    def error(self, payload = {}):
+        url = self.app_url + "errors/"
         contents = self.post(url, data_j = payload)
         return contents
 
     def _build_url(self):
-        self.app_url + "organizations/%s/apps/%s/" % (self.org_id, self.app_id)
+        self.app_url = self.base_url + "organizations/%s/apps/%s/" % (self.org_id, self.app_id)

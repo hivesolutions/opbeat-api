@@ -35,9 +35,5 @@ __license__ = "Apache License, Version 2.0"
 """ The license for the module """
 
 from . import base
-from . import payment
-from . import webhook
 
-from .base import BASE_URL, SANDBOX_URL, CLIENT_ID, CLIENT_SECRET, Api
-from .payment import PaymentApi
-from .webhook import WebhookApi
+from .base import BASE_URL, Api
