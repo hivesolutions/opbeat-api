@@ -1,4 +1,4 @@
-# [Opbeat API](http://opbeat_api.hive.pt)
+# [Opbeat API](http://opbeat-api.hive.pt)
 
 Simple Python based API client for Opbeat.
 
