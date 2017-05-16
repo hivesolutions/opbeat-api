@@ -48,7 +48,7 @@ setuptools.setup(
     description = "Opbeat API Client",
     license = "Apache License, Version 2.0",
     keywords = "Opbeat API",
-    url = "http://opbeat_api.hive.pt",
+    url = "http://opbeat-api.hive.pt",
     zip_safe = False,
     packages = [
         "opbeat"
