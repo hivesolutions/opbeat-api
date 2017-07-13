@@ -50,7 +50,7 @@ class Api(appier.Api):
         self.app_id = appier.conf("OPBEAT_APP_ID", None)
         self.org_id = appier.conf("OPBEAT_ORG_ID", None)
         self.token = appier.conf("OPBEAT_TOKEN", None)
-        self.base_url = kwargs.get("base_url",  BASE_URL)
+        self.base_url = kwargs.get("base_url", BASE_URL)
         self.app_id = kwargs.get("app_id", self.app_id)
         self.org_id = kwargs.get("org_id", self.org_id)
         self.token = kwargs.get("token", self.token)
