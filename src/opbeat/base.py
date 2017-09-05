@@ -43,10 +43,10 @@ BASE_URL = "https://intake.opbeat.com/api/v1/"
 """ The default base url to be used when no other
 base url value is provided to the constructor """
 
-class Api(appier.Api):
+class API(appier.API):
 
     def __init__(self, *args, **kwargs):
-        appier.Api.__init__(self, *args, **kwargs)
+        appier.API.__init__(self, *args, **kwargs)
         self.app_id = appier.conf("OPBEAT_APP_ID", None)
         self.org_id = appier.conf("OPBEAT_ORG_ID", None)
         self.token = appier.conf("OPBEAT_TOKEN", None)
