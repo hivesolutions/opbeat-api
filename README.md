@@ -4,9 +4,11 @@ Simple Python based API client for Opbeat.
 
 ## Configuration
 
-* `OPBEAT_APP_ID` (`str`) - The id of the application (App) to make request to
-* `OPBEAT_ORG_ID` (`str`) - The identifier of the organization making API requests
-* `OPBEAT_TOKEN` (`str`) - The secret token used for the API access
+| Name | Type | Description |
+| ----- | ----- | ----- |
+| **OPBEAT_APP_ID** | `str` | The id of the application (App) to make request to. |
+| **OPBEAT_ORG_ID** | `str` | The identifier of the organization making API requests. |
+| **OPBEAT_TOKEN** | `str` | The secret token used for the API access. |
 
 ## License
 
