@@ -4,4 +4,4 @@ session.shelve*
 
 /dist
 /build
-/src/opbeat_api.egg-info
+/src/opbeat-api.egg-info
