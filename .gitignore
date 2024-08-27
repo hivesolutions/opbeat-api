@@ -2,6 +2,12 @@
 
 session.shelve*
 
+.DS_Store
+
+/.vscode/settings.json
+
+/.venv
+
 /dist
 /build
 /src/opbeat_api.egg-info

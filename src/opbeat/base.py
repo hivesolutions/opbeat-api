@@ -22,15 +22,6 @@
 __author__ = "João Magalhães <joamag@hive.pt>"
 """ The author(s) of the module """
 
-__version__ = "1.0.0"
-""" The version of the module """
-
-__revision__ = "$LastChangedRevision$"
-""" The revision number of the module """
-
-__date__ = "$LastChangedDate$"
-""" The last change date of the module """
-
 __copyright__ = "Copyright (c) 2008-2020 Hive Solutions Lda."
 """ The copyright for the module """
 
@@ -42,6 +33,7 @@ import appier
 BASE_URL = "https://intake.opbeat.com/api/v1/"
 """ The default base URL to be used when no other
 base URL value is provided to the constructor """
+
 
 class API(appier.API):
 
@@ -60,27 +52,31 @@ class API(appier.API):
         self,
         method,
         url,
-        data = None,
-        data_j = None,
-        data_m = None,
-        headers = None,
-        params = None,
-        mime = None,
-        kwargs = None
+        data=None,
+        data_j=None,
+        data_m=None,
+        headers=None,
+        params=None,
+        mime=None,
+        kwargs=None,
     ):
         auth = kwargs.pop("auth", True)
-        if not auth: return
+        if not auth:
+            return
         headers["Authorization"] = "Bearer %s" % self.token
 
-    def release(self, payload = {}):
+    def release(self, payload={}):
         url = self.app_url + "releases/"
-        contents = self.post(url, data_j = payload)
+        contents = self.post(url, data_j=payload)
         return contents
 
-    def error(self, payload = {}):
+    def error(self, payload={}):
         url = self.app_url + "errors/"
-        contents = self.post(url, data_j = payload)
+        contents = self.post(url, data_j=payload)
         return contents
 
     def _build_url(self):
-        self.app_url = self.base_url + "organizations/%s/apps/%s/" % (self.org_id, self.app_id)
+        self.app_url = self.base_url + "organizations/%s/apps/%s/" % (
+            self.org_id,
+            self.app_id,
+        )
